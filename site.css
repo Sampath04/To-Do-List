@@ -1,0 +1,31 @@
+body{
+  background: #000;
+}
+.container{
+  width: 300px;
+  min-height: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  background: #b99192;
+  text-align: center;
+}
+button, input{
+  padding: 5px 10px;
+}
+ol{
+  text-align: left;
+  width: 100%;
+  
+}
+
+em{
+  display: inline-block;
+  width: 60%;
+  font-weight: 700;
+  word-break: break-all;
+}
+
+span{
+  cursor: pointer;
+}
