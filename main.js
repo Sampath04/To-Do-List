@@ -2,7 +2,7 @@ var addList = document.getElementById("list");
 
 function add(){
   var text = document.getElementById('txt').value;
-  var listItem = '<li><em>' + text + '</em><input type="checkbox"><span>X</span></li>';
+  var listItem = '<li><input type="checkbox"> <em>' + text + '</em><span>X</span></li>';
   if(text === ""){
     alert("Type the list");
     return;
