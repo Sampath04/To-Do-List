@@ -47,6 +47,8 @@ em{
   font-weight: 700;
   word-break: break-all;
   text-align: left;
+  opacity: 1;
+  transition: opacity 0.6s ease;
 }
 
 span{

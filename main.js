@@ -1,4 +1,6 @@
 var addList = document.getElementById("list");
+var keyPressed = document.getElementById("txt");
+var buttonPressed = document.getElementById("submit");
 
 function add(){
   var text = document.getElementById('txt').value;
@@ -8,10 +10,8 @@ function add(){
     return;
   }
   addList.insertAdjacentHTML('beforeend', listItem);
-  
+  document.getElementById('txt').value = "";
 }
-
-addList.addEventListener("click", dele);
 
 function dele(e){
   var ele =  e.target;
@@ -19,5 +19,17 @@ function dele(e){
     ele.parentNode.remove();
   }
 }
+
+function enter(e){
+  e.preventDefault();
+  if(e.keyCode == 13){
+    buttonPressed.click();
+  }
+}
+
+addList.addEventListener("click", dele);
+keyPressed.addEventListener("keyup", enter);
+
+
 
 
